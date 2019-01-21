@@ -13,3 +13,15 @@ export const SelectableTile = styled(Tile)`
         ${greenBoxShadow}
     }
 `;
+export const DeleteableTile = styled(SelectableTile)`
+    &:hover {
+        cursor: pointer;
+        ${redBoxShadow}
+    }
+`;
+export const DisabledTile = styled(Tile)`
+    &:hover {
+        pointer-events:none;
+        opacity: 0.4;
+    }
+`;
