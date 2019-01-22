@@ -16,7 +16,7 @@ export const PriceGrid = () => {
             {({prices}) =>(
                 <PriceGridElem>
                     {prices.map((price, index) => (
-                        <PriceTile key={Object.keys(price)[0]} index={index} price={price} />
+                        <PriceTile key={`priceTile-${index}`} index={index} price={price} />
                     ))}
                 </PriceGridElem>
             )}
